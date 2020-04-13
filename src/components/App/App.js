@@ -18,7 +18,7 @@ class App extends React.Component {
           {
             key: state.lists.length ? state.lists[state.lists.length-1].key+1 : 0,
             title,
-            description: 'Interesting things I want to check out!',
+            description: 'Your new description',
             image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
             columns: []
           }
