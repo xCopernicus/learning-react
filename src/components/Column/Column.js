@@ -16,7 +16,7 @@ class Column extends React.Component {
     title: PropTypes.node,
   }
 
-  addColumn(title){
+  addCard(title){
     this.setState(state => (
       {
         cards: [
@@ -41,7 +41,7 @@ class Column extends React.Component {
         {this.state.cards.map(({key, ...cardProps}) => (
           <Card key={key} {...cardProps} />
         ))}
-        <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
+        <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
       </section>
     )
   }
