@@ -13,4 +13,4 @@ Card.propTypes = {
   title: PropTypes.node,
 };
 
-export default Card
+export default Card;

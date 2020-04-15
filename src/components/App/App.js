@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.scss';
-import {settings, pageContents, listData, lists} from '../../data/dataStore.js';
+import {settings, pageContents, lists} from '../../data/dataStore.js';
 import List from '../List/List.js';
 import Creator from '../Creator/Creator.js';
 
@@ -20,9 +20,9 @@ class App extends React.Component {
             title,
             description: 'Your new description',
             image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-            columns: []
-          }
-        ]
+            columns: [],
+          },
+        ],
       }
     ));
   }
@@ -37,7 +37,7 @@ class App extends React.Component {
         ))}
         <Creator text={settings.listCreatorText} action={title => this.addList(title)} />
       </main>
-    )
+    );
   }
 }
 
