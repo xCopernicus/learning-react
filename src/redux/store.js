@@ -6,10 +6,12 @@ import searchReducer from './searchStringRedux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
-  app: initialStoreData.app,
+  home: initialStoreData.home,
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
   cards: initialStoreData.cards,
+  info: initialStoreData.info,
+  faq: initialStoreData.faq,
   searchString: '',
 };
 
