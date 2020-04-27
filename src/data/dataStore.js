@@ -29,6 +29,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>now!</sup>',
+    description: 'Test1',
+    image: 'https://i.postimg.cc/rz2RcK9r/starry-night-sky-1205301.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Other things',
+    description: 'Test2',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
 ];
 
 const columns = [
@@ -103,6 +115,11 @@ const faq = {
   content: '<p>Test FAQ</p>',
 };
 
+const searchResults = {
+  title: 'Search Results',
+  icon: 'search',
+};
+
 const initialStoreData = {
   home: {...pageContents},
   lists: [...lists],
@@ -110,6 +127,7 @@ const initialStoreData = {
   cards: [...cards],
   info: {...info},
   faq: {...faq},
+  searchResults: {...searchResults},
 };
 
 export default initialStoreData;

@@ -12,6 +12,7 @@ const initialState = {
   cards: initialStoreData.cards,
   info: initialStoreData.info,
   faq: initialStoreData.faq,
+  searchResults: initialStoreData.searchResults,
   searchString: '',
 };
 
