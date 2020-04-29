@@ -2,13 +2,13 @@ import {connect} from 'react-redux';
 import Search from './Search';
 import {
   getSearchString,
-  countVisibleCards,
   countAllCards,
 } from '../../redux/searchStringRedux';
+import {getCardsForSearchResultsLength} from '../../redux/cardsRedux';
 
 const mapStateToProps = (state) => ({
   searchString: getSearchString(state),
-  countVisible: countVisibleCards(state),
+  countVisible: getCardsForSearchResultsLength(state),
   countAll: countAllCards(state),
 });
 

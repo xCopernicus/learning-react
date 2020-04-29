@@ -15,7 +15,7 @@ const ListLink = ({id, title, image, description}) => (
         </div>
       </div>
       <div className={styles.image}>
-        <img src={image} />
+        <img src={image} alt='image'/>
       </div>
     </section>
   </Link>
